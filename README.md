@@ -24,7 +24,7 @@ When "branching" you tell git which branch you'd like to start with (usually mas
 The first thing you'll do when working with an existing repository is "clone" into it. "Cloning" copies the current state of the directory to a new location that you specify. Usually this means creating a "local" copy of the directory that we can work on.
 
 ## Getting started
-[https://git-scm.com/download](Download git)
+[Download git](https://git-scm.com/download)
 
 ## Exercise 1: Forking
 1. Fork this repo by heading to [http://github.com/codewheel/git/](http://github.com/codewheel/git/) and clicking on the button in the top right of the screen that says "Fork".
