@@ -38,15 +38,14 @@ When working locally git helps us to focus on our work by tracking changes to a 
 ## Exercise 2: Cloning
 1. Copy the link to your forked git repository by clicking on the green "Clone or download" button then copying the url of the repository or by simply clicking the "Copy to Clipboard" icon.
 2. Open the Terminal application on your computer.
-3. If you already have a Development directory you can `cd` into it.
-4. If you don't yet have a directory or folder for all your development files you can create one by doing the following:
+3. If you don't yet have a directory or folder for all your development files you can create one by doing the following:
   - Type `cd ~` and hit enter. "cd" stands for "change directories" so here we are asking the terminal to change directory to "~" which is just a shortcut to our root level user directory.
   - Next we'll create a development directory by typing `mkdir Development` and hitting enter. "mkdir" stands for "make directory" which is really just the same thing as creating a new folder.
-  - Now that we have a Development directory we can change directories into it by typing `cd Development` and hitting enter. Your prompt should now have the location of your current directory as "~/Development".
-5. Now we are in your development folder we are going to "clone" into our forked repository which simply means we will have a local version of the directory we can make changes to. Go ahead and type `git clone ` then paste in the location of our forked repository and press enter.
+4. Change directories into your development folder by typing `cd ~/Development` and hitting enter. Your prompt should now have the location of your current directory as "~/Development".
+6. Now we are in your development folder we are going to "clone" into our forked repository which simply means we will have a local version of the directory we can make changes to. Go ahead and type `git clone`, then a space, then paste in the location of your forked repository before hitting enter.
 
 ## Exercise 3: Committing
-1. If all went to plan you we should now have a new folder in our "Development" directory called `git`. This is our "Working Directory". If we open up `git` we can see that it contains a single file named `README.md`.
+1. If all went to plan you we should now have a new folder in our "Development" directory called `git`. Change directories into it by typing `cd git` and hitting enter. This is our "Working Directory". If we open up `git` in the finder we can see that it contains a single file named `README.md`.
 2. Open up `README.md` file. You'll notice it has a strange way of formatting paragraphs, titles and lists. That's because this file is a markdown file.
 3. Scroll to the bottom of the file and add your name on a new line to the list of successful gitters visible at the bottom of the list.
 4. Open up your Terminal application again. You should still be in the `git` folder but if you aren't you can simply change directories into it by typing `cd ~/Development/git` and hitting enter.
@@ -56,7 +55,7 @@ When working locally git helps us to focus on our work by tracking changes to a 
 ## Exercise 4: Pushing
 1. Although we have now committed our updated README file to the HEAD of our local version of the repository, nobody else will be able to see our changes until we let the "remote" repository know about the changes we've made. In this case we can share our changes by "pushing" them "up" to the repository we made on GitHub in exercise 1.
 2. To tell git where we want the commit we firstly need to say which remote repository we want to receive our changes as well as the branch that they belong to. By default git calls the original location that we cloned the repository from the "origin" remote. We've made all our changes on the "master" branch so to let GitHub know about the changes we simply need to type `git push origin master` and hit enter.
-3. Now if we open up our repository on GitHub again and scroll down to the bottom we should see our name added to the list of successful gitters.
+3. Now if we reload our repository on GitHub and scroll down to the bottom we should see our name added to the list of successful gitters.
 
 ## Successful gitters
 - Sam Margalit
