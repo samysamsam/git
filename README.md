@@ -23,17 +23,40 @@ When "branching" you tell git which branch you'd like to start with (usually mas
 
 The first thing you'll do when working with an existing repository is "clone" into it. "Cloning" copies the current state of the directory to a new location. Usually this means creating a "local" copy of the directory that we can work on.
 
+When working locally git helps us to focus on our work by tracking changes to a branch in three different areas:
+- "Working Directory" which holds all the actual files of our branch
+- "Index" which acts as a staging area for making notes about the changes before we commit them
+- "HEAD" which points to the last commit that we made
+
 ## Getting started
 [Download git](https://git-scm.com/download)
 
 ## Exercise 1: Forking
 1. Fork this repo by heading to [http://github.com/codewheel/git/](http://github.com/codewheel/git/) and clicking on the button in the top right of the screen that says "Fork".
 2. GitHub should now redirect you to your own version of this repository located under http://github.com/USERNAME/git where USERNAME is your GitHub username.
-3. Copy the link to your forked git repository by clicking the "Copy to Clipboard" icon visible beside the two download links.
-4. Open the Terminal application on your computer
-5. If you already have a Development directory you can `cd` into it
-6. If you don't yet have a directory or folder for all your development files you can create one by doing the following:
+
+## Exercise 2: Cloning
+1. Copy the link to your forked git repository by clicking the "Copy to Clipboard" icon visible beside the two download links.
+2. Open the Terminal application on your computer.
+3. If you already have a Development directory you can `cd` into it.
+4. If you don't yet have a directory or folder for all your development files you can create one by doing the following:
   - Type `cd ~` and hit enter. "cd" stands for "change directories" so here we are asking the terminal to change directory to "~" which is just a shortcut to our root level user directory.
   - Next we'll create a development directory by typing `mkdir Development` and hitting enter. "mkdir" stands for "make directory" which is really just the same thing as creating a new folder.
-  — Now that we have a Development directory we can change directories into it by typing `cd Development` and hitting enter. Your prompt should now have the location of your current directory as "~/Development"
-7. Now we are in your development folder we are going to "clone" into our forked repository which simply means we will have a local version of the directory we can make changes to. Go ahead and type `git clone ` then paste in the location of our forked repository and press enter.
+  - Now that we have a Development directory we can change directories into it by typing `cd Development` and hitting enter. Your prompt should now have the location of your current directory as "~/Development".
+5. Now we are in your development folder we are going to "clone" into our forked repository which simply means we will have a local version of the directory we can make changes to. Go ahead and type `git clone ` then paste in the location of our forked repository and press enter.
+
+## Exercise 3: Committing
+1. If all went to plan you we should now have a new folder in our "Development" directory called `git`. This is our "Working Directory". If we open up `git` we can see that it contains a single file named `README.md`.
+2. Open up `README.md` file. You'll notice it has a strange way of formatting paragraphs, titles and lists. That's because this file is a markdown file.
+3. Scroll to the bottom of the file and add your name on a new line to the list of successful gitters visible at the bottom of the list.
+4. Open up your Terminal application again. You should still be in the `git` folder but if you aren't you can simply change directories into it by typing `cd ~/Development/git` and hitting enter.
+5. Now we'll commit the changes we made to our local version of the `README.md` file. First we need to add the file to git's staging area or "Index". We can add all the files that have changed in our working directory by typing `git add .`. We could also just add one file `git add PATH/TO/FILE` where "PATH/TO/FILE" would be replaced by the location of the file we want to add. Let's add our file by typing `git add README.md` and hitting enter.
+6. Great now our README file is in the staging area and ready to be committed. Every commit we make is accompanied by a short "commit message" about the changes we have made. A good commit message should let other people working on the project know what changes to the files you made and why you made them. For now we can type `git commit -m "Added my name to list of successful gitters"` and hit return. "-m" here stands for "message" and the quotations marks around the message lets git know when the message starts and when it ends.
+
+## Exercise 4: Pushing
+1. Although we have now committed our updated README file to the HEAD of our local version of the repository, nobody else will be able to see our changes until we let the "remote" repository know about the changes we've made. In this case we can share our changes by "pushing" them "up" to the repository we made on GitHub in exercise 1.
+2. To tell git where we want the commit we firstly need to say which remote repository we want to receive our changes as well as the branch that they belong to. By default git calls the original location that we cloned the repository from the "origin" remote. We've made all our changes on the "master" branch so to let GitHub know about the changes we simply need to type `git push origin master` and hit enter.
+3. Now if we open up our repository on GitHub again and scroll down to the bottom we should see our name added to the list of successful gitters.
+
+## Successful gitters
+- Sam Margalit
