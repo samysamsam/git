@@ -58,4 +58,4 @@ When working locally git helps us to focus on our work by tracking changes to a 
 3. Now if we reload our repository on GitHub and scroll down to the bottom we should see our name added to the list of successful gitters.
 
 ## Successful gitters
-- Sam Margalit
+- Linus Torvalds
