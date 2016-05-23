@@ -1,7 +1,7 @@
 # Git
 
 ## What is Git?
-Git is a "Version Control System" that allows people to work together on the same project. It's clever "diffing" strategies helps avoid the confusion that tends to happen when multiple people are editing the same file.
+Git is a "Version Control System" that allows people to work together on the same project. It's clever "diffing" strategies helps avoid the confusion that tends to happen when multiple people are editing the same file. It also helps us keep track of all of the changes made over the course of a project’s life.
 
 ## Why do we use it?
 - Central source of truth
@@ -13,7 +13,7 @@ Git is a "Version Control System" that allows people to work together on the sam
 - Encourages documenting smaller, modular changes
 
 ## How does it work?
-Git uses "repositories" to track changes to a project over time. The repository is a collection of all the files and folders that make up a project as well as a list of all the changes that have happened in the project.
+Git uses "repositories" to track changes to a project over time. A repository is a collection of all the files and folders that make up a project as well as a list of all the changes that have happened in the project.
 
 A good way of thinking about a repository is like a tree. Each tree has a singular trunk which in git is known as the "master branch" but usually just referred to as "master". You can create additional "branches" that stem off of the master branch—which is usually a good idea when working on a new feature of your project.
 
@@ -21,7 +21,7 @@ When "branching" you tell git which branch you'd like to start with (usually mas
 
 "Merging" is kinda like reverse-branching. It lets you copy across all the changes from one branch into another. At the end of the merge you still have the two branches but now all the changes from one branch are in the other.
 
-The first thing you'll do when working with an existing repository is "clone" into it. "Cloning" copies the current state of the directory to a new location that you specify. Usually this means creating a "local" copy of the directory that we can work on.
+The first thing you'll do when working with an existing repository is "clone" into it. "Cloning" copies the current state of the directory to a new location. Usually this means creating a "local" copy of the directory that we can work on.
 
 ## Getting started
 [Download git](https://git-scm.com/download)
