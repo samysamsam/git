@@ -36,7 +36,7 @@ When working locally git helps us to focus on our work by tracking changes to a 
 2. GitHub should now redirect you to your own version of this repository located under http://github.com/USERNAME/git where USERNAME is your GitHub username.
 
 ## Exercise 2: Cloning
-1. Copy the link to your forked git repository by clicking the "Copy to Clipboard" icon visible beside the two download links.
+1. Copy the link to your forked git repository by clicking on the green "Clone or download" button then copying the url of the repository or by simply clicking the "Copy to Clipboard" icon.
 2. Open the Terminal application on your computer.
 3. If you already have a Development directory you can `cd` into it.
 4. If you don't yet have a directory or folder for all your development files you can create one by doing the following:
