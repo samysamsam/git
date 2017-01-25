@@ -45,9 +45,9 @@ When working locally git helps us to focus on our work by tracking changes to a 
 6. Now we are in your development folder we are going to "clone" into our forked repository which simply means we will have a local version of the directory we can make changes to. Go ahead and type `git clone`, then a space, then paste in the location of your forked repository before hitting enter.
 
 ## Exercise 3: Committing
-1. If all went to plan you we should now have a new folder in our "Development" directory called `git`. Change directories into it by typing `cd git` and hitting enter. This is our "Working Directory". If we open up `git` in the finder we can see that it contains a single file named `README.md`.
+1. If all went to plan we should now have a new folder in our "Development" directory called `git`. Change directories into it by typing `cd git` and hitting enter. This is our "Working Directory". If we open up `git` in the finder we can see that it contains a single file named `README.md`.
 2. Open up `README.md` file. You'll notice it has a strange way of formatting paragraphs, titles and lists. That's because this file is a markdown file.
-3. Scroll to the bottom of the file and add your name on a new line to the list of successful gitters visible at the bottom of the list.
+3. Scroll to the bottom of the file and add your name on a new line to the list of successful gitters visible at the bottom of the list. Hit save.
 4. Open up your Terminal application again. You should still be in the `git` folder but if you aren't you can simply change directories into it by typing `cd ~/Development/git` and hitting enter.
 5. Now we'll commit the changes we made to our local version of the `README.md` file. First we need to add the file to git's staging area or "Index". We can add all the files that have changed in our working directory by typing `git add .`. We could also just add one file `git add PATH/TO/FILE` where "PATH/TO/FILE" would be replaced by the location of the file we want to add. Let's add our file by typing `git add README.md` and hitting enter.
 6. Great now our README file is in the staging area and ready to be committed. Every commit we make is accompanied by a short "commit message" about the changes we have made. A good commit message should let other people working on the project know what changes to the files you made and why you made them. For now we can type `git commit -m "Added my name to list of successful gitters"` and hit return. "-m" here stands for "message" and the quotations marks around the message lets git know when the message starts and when it ends.
@@ -59,3 +59,4 @@ When working locally git helps us to focus on our work by tracking changes to a 
 
 ## Successful gitters
 - Linus Torvalds
+- Sam Russell
